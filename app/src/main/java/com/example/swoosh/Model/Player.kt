@@ -3,7 +3,7 @@ package com.example.swoosh.Model
 import android.os.Parcel
 import android.os.Parcelable
 
-class Player(var league: String = "", var skill: String = "") : Parcelable {
+class Player(var league: String? = null, var skill: String? = null) : Parcelable {
     constructor(parcel: Parcel) : this(
             parcel.readString(),
             parcel.readString()) {
